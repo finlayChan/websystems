@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebSystems</title>
+  <link rel="stylesheet" href="websystems.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      overflow-y: scroll; /* Add this line to make the page scrollable */
+    }
+
+    .fixed-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(./images/goodsunsent.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+    .indexBody {
+      position: relative;
+      padding: 2rem;
+      text-align: center;
+      color: #ffffff;
+      line-height: 1.5;
+    }
+
+    .hero {
+      background-size: cover;
+      background-position: center;
+      padding: 4rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+/*
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+    }
+*/
+    .navigation {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
+
+    .navigation a {
+      color: #000000;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 1.2rem;
+    }
+
+    .navigation a:hover {
+      color: #ccc;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="fixed-bg"></div>
+    <div class="hero">
+        <!--
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="past.html">Past</a>
+            <a href="future.html">Future</a>
+            <a href="comments.html">Comments</a>
+        </div> -->
+
+        <div class="navbar">
+            <h2 class="logo"> WebSystems :) </h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="past.html">Past</a></li>
+                <li><a href="future.html">Future</a></li>
+                <li><a href="comments.html">Comments</a></li>
+            </ul>
+        </div>
+
+
+        <div class="indexBody">
+            <h1>Welcome to WebSystems</h1>
+
+            <table style="background-color: transparent; border: 30px;">
+
+                <tbody>
+                    <tr style="color: #ffffff;">
+                        <td>Hello everyone! My name is Finlay . Welcome to my first ever website for my Web Systems Assignment. I am currently in my first year of university studying a double degree in Artificial Intelligence and International studies. The 4 courses I am studying this semester include WebSystems, Programming Fundamentals, Discrete Mathematics, and Foundation Mathematics. This website will discuss a bit about me, my past experiences in computing, what I aspire to do with my computing knowledge in the future, and my comments on this Web Systems assignment.</td>
+                        <td><img src="./images/IMG_3652.jpg" alt="Me Playing Basketball" style="width: 300px; height: auto;"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+

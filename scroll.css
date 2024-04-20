@@ -1,0 +1,81 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(./images/goodsunsent.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  /* Header Styles */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+/*    background-color: rgba(255, 255, 255, 0.8); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    z-index: 999;
+  }
+  /*
+  .logo img {
+    max-height: 50px;
+  }*/
+
+  .logo h2 {
+    max-height: 50px;
+    top: 0px;
+    left: 20px;
+    color: #ff7200;
+    font-size: 40px;
+    font-family: cursive;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 40px;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 1rem;
+  }
+  
+  nav a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #666;
+  }
+  
+  /* Main Content Styles */
+  main {
+    padding-top: 150px; /* Adjust this value to match the header height */
+    padding-bottom: 2rem;
+    overflow-y: auto;
+    max-height: calc(100vh - 150px); /* Adjust this value to match the header height */
+  }
+  
+  .content-wrapper {
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto;
+/*    background-color: rgba(255, 255, 255, 0.8); */
+    padding: 2rem;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
