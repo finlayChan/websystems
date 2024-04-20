@@ -1,259 +1,139 @@
-
+/* Global Styles */
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    overflow-y: scroll; /* Add this line to make the page scrollable */
-}
-
-.main {
-    width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(./images/goodsunsent.jpeg);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    font-family: sans-serif;
-}
-.main2 {
-    width: 100%;
-    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(./images/goodsunsent\ copy.jpeg);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    font-family: sans-serif; 
-}
-
-.blah {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    overflow-y: scroll; /* Add this line to make the page scrollable */ 
-}
-
-.fixed-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
     background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(./images/goodsunsent.jpeg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
   }
-/*
-.navbar{
-    width: 95%;
-    height: auto;
-    margin-left: 30px;
-}*/
-
-.navbar {
+  
+  /* Header Styles */
+  header {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+/*    background-color: rgba(255, 255, 255, 0.8); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    z-index: 999;
   }
+  /*
+  .logo img {
+    max-height: 50px;
+  }*/
 
-  .navbar a {
-    color: #000000;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 1.2rem;
-  }
-
-  .navbar a:hover {
-    color: #ccc;
-  }
-
-.logo {
-    position: fixed;
+  .logo h2 {
+    max-height: 50px;
     top: 0px;
     left: 20px;
     color: #ff7200;
     font-size: 40px;
     font-family: cursive;
-    float: left;
-    padding-top: .6%;
-    cursor: pointer;
-}
-/*
-.logo{
- 
-
-}*/
-.menu{
-    /*
-    width: 600px;
-    float: right;
-    height: 70px;*/
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 50px;
+    padding: 0;
     display: flex;
-    justify-content: flex-end;
-    top: 20px;/*
-    position: fixed;
-
-    : 2px;    */
-}
-
-ul{
-    float: left;
-    display: flex;
-    padding-top: 30px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 14%;
-}
- ul li{
-    list-style: none;
-    margin-left: 60px;
-    font-size: 16px;
- }
- ul li a{
-    text-decoration: none;
+  }
+  
+  nav li {
+    margin-left: 1rem;
+  }
+  
+  nav a {
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    transition: 0.3s ease;
- }
-  ul li a:hover{
-    color: #ff7200;
-
-  }
-/*.title{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}*/
-.title{
-    text-align: center;
-    cursor: pointer;
-    font-family: cursive;
-    color: #fff;
-    font-size: 65px;
-}
-.button{
-    position: fixed;
-    bottom: 2%;
-    left: 30%;
-    /*top: 51%;
-    left: 50%;
-    transform: translate(-50%, -50%);*/
-}
-.btn{
-    color: #fff;
-    padding: 5px 20px;
-    font-size: 18px;
     text-decoration: none;
-    border: 1px solid #fff;
     transition: 0.3s ease;
-}
-.btn:hover{
-    background-color: coral;
-    color: #fff;
-}
-.indexBody {
-    position: fixed;
-    bottom: 7%;
-    left: 30%;
-    transform: translateX(-30%);
-    text-align: left;
-    color: #fff;
-    line-height: 1.5;
-}
-.pastPara {
-    position: fixed;
+  }
+  
+  nav a:hover {
+    color: #ff7200;
+  }
+  
+  /* Main Content Styles */
+  main {
+    padding-top: 150px; /* Adjust this value to match the header height */
+    padding-bottom: 2rem;
+    overflow-y: auto;
+    max-height: calc(100vh - 150px); /* Adjust this value to match the header height */
+  }
+  
+  .content-wrapper {
+    color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
     padding: 2rem;
-    text-align: left;
-    color: #fff;
-    line-height: 1.5;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    padding-right: 32px;
+  }
+
+/* Table Style */
+
+.my-table-container {
+    padding-left: 20px;
+    padding-right: 20px;
 }
-/*.indexBody {
-    position: absolute;
-    bottom: 7%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: left;
-    color: #fff;
-    line-height: 1.5;
-}*/
-.pastBody {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    overflow-y: scroll; /* Add this line to make the page scrollable */    
-    /*
-    position: absolute;
-    bottom: 15%;
-    left: 35%;
-    transform: translateX(-50%);
-    text-align: left;
-    color: #fff;
-    line-height: 1.5;*/
+
+.my-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 250px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius:6px;
 }
-#MySubjects{
-    color: coral;
+
+.my-table thead tr {
+    background-color: #ff7200;
+    color: #ffffff;
+    text-align: left;
+}
+
+.my-table th,
+.my-table td {
+    padding: 12px 15px;
+}
+
+.my-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    background-color: #feb273;
+    color: #ffffff;
+}
+
+.my-table tbody tr:nth-of-type(even) {
+    background-color: #fed4b1;
+}
+
+.my-table tbody tr:last-of-type {
+    border-bottom: 2px solid #ff7200;
+}
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
     text-align: center;
-    position: absolute;
-    right: 11.5%;
-    bottom: 31.5%;
-    font-size: 30px;
-    font-family: fantasy;
-
-}
-.schoolTable{
- color: #fff;
- position: absolute;
- bottom: 15%;
- right: 10%;
- border: #ff7200;
- border-width: 20px;
-
-
-}
-.schoolTable tbody{
-    border: 20px solid white;
-    padding: 10px;
-    text-align: left;
-}
-.P2body{
-
-}
-.pastP2{
-    position: absolute;
-    top: 10%;
-    left: 35%;
-    transform: translateX(-50%);
-    text-align: left;
-    color: #fff;
-    line-height: 1.5;
-}
-.pastP3{
-    position: absolute;
-    top: 15%;
-    left: 35%;
-    transform: translateX(-50%);
-    text-align: left;
-    color: #fff;
-    line-height: 1.5;
-}
-.pastP4{
-    position: absolute;
-    top: 10%;
-    left: 40%;
-    transform: translateX(-50%);
-    text-align: left;
-    color: #fff;
-    line-height: 1.5;
-}
-#futureBody{
-    position: absolute;
-    bottom: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: #fff;
-    line-height: 1.5;
-}
-
-
+  }

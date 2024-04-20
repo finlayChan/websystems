@@ -38,7 +38,7 @@ body {
   
   nav ul {
     list-style-type: none;
-    margin: 40px;
+    margin: 50px;
     padding: 0;
     display: flex;
   }
@@ -48,12 +48,14 @@ body {
   }
   
   nav a {
-    color: #ccc;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    transition: 0.3s ease;
   }
   
   nav a:hover {
-    color: #666;
+    color: #ff7200;
   }
   
   /* Main Content Styles */
@@ -65,12 +67,68 @@ body {
   }
   
   .content-wrapper {
-    color: #ccc;
-    max-width: 600px;
+    color: #ffffff;
+    max-width: 800px;
     margin: 0 auto;
-/*    background-color: rgba(255, 255, 255, 0.8); */
     padding: 2rem;
   }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    padding-right: 32px;
+  }
+
+/* Table Style */
+
+.my-table-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.my-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 250px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius:6px;
+}
+
+.my-table thead tr {
+    background-color: #ff7200;
+    color: #ffffff;
+    text-align: left;
+}
+
+.my-table th,
+.my-table td {
+    padding: 12px 15px;
+}
+
+.my-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    background-color: #feb273;
+    color: #ffffff;
+}
+
+.my-table tbody tr:nth-of-type(even) {
+    background-color: #fed4b1;
+}
+
+.my-table tbody tr:last-of-type {
+    border-bottom: 2px solid #ff7200;
+}
   
   /* Footer Styles */
   footer {
