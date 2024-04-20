@@ -15,7 +15,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-/*    background-color: rgba(255, 255, 255, 0.8); */
+    background-color: rgba(0, 0, 0); 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,6 +88,10 @@ body {
     padding-right: 32px;
   }
 
+  .column li {
+    padding-bottom: 20px;
+  }
+
 /* Table Style */
 
 .my-table-container {
@@ -133,7 +137,7 @@ body {
 /* Table for Comments page */
 
 .my-table-1-container {
-  padding-left: 20px;
+  /*padding-left: 20px;*/
 }
 
 .my-table-1 {
@@ -181,7 +185,7 @@ body {
   
 /* Footer Styles */
 footer {
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     padding: 1rem;
     text-align: center;
